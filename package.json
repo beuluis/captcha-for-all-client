@@ -12,7 +12,6 @@
     "build": "rm -rf dist && tsc",
     "generate": "openapi-generator-cli generate -g typescript-axios -i https://raw.githubusercontent.com/beuluis/captcha-for-all-api/develop/docs/swagger.json -o ./client",
     "version": "npm run generate && npm run build",
-    "prepack": "npm run generate && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
