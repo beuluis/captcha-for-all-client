@@ -1,6 +1,6 @@
 {
   "name": "@beuluis/captcha-for-all-client",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Client pack for my captcha-for-all-api",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -8,7 +8,6 @@
   "files": [
     "dist/*"
   ],
-
   "scripts": {
     "build": "rm -rf dist && tsc",
     "generate": "openapi-generator-cli generate -g typescript-axios -i https://raw.githubusercontent.com/beuluis/captcha-for-all-api/develop/docs/swagger.json -o ./client",
