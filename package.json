@@ -1,6 +1,6 @@
 {
   "name": "@beuluis/captcha-for-all-client",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Client pack for my captcha-for-all-api",
   "main": "dist/index.js",
   "module": "dist/index.js",
