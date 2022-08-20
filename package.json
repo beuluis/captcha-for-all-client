@@ -1,0 +1,35 @@
+{
+  "name": "@beuluis/captcha-for-all-client",
+  "version": "0.0.1",
+  "description": "Client pack for my captcha-for-all-api",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/*"
+  ],
+
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "generate": "openapi-generator-cli generate -g typescript-axios -i https://raw.githubusercontent.com/beuluis/captcha-for-all-api/develop/docs/swagger.json -o ./client",
+    "version": "npm run generate && npm run build",
+    "prepack": "npm run generate && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beuluis/captcha-for-all-client.git"
+  },
+  "author": "Luis Beu <me@luisbeu.de> (https://luisbeu.de/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beuluis/captcha-for-all-client/issues"
+  },
+  "homepage": "https://github.com/beuluis/captcha-for-all-client#readme",
+  "dependencies": {
+    "@openapitools/openapi-generator-cli": "^2.5.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
