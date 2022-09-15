@@ -9,7 +9,7 @@
   <h3 align="center">captcha-for-all-client generator</h3>
 
   <p align="center">
-    Client pack generator for my [captcha-for-all-api](https://github.com/beuluis/captcha-for-all-api)
+    Client pack for my <a href="https://github.com/beuluis/captcha-for-all-api">captcha-for-all-api</a>
     <br />
     <br />
     ·
